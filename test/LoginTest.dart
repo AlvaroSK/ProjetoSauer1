@@ -34,8 +34,5 @@ class LoginTest {
     test('Campo Senha', () {
       
     });
-    test('Envio', () {
-      
-    });  
   }
 }
