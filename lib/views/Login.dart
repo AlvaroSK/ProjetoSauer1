@@ -6,19 +6,19 @@ class Login extends StatelessWidget{
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:_LoginPage()
+      home:LoginPage()
     );
   }
 }
 
-class _LoginPage extends StatefulWidget{
-  _LoginPage({Key key}) : super(key: key);
+class LoginPage extends StatefulWidget{
+  LoginPage({Key key}) : super(key: key);
 
   @override
   _LoginPageStateless createState() => _LoginPageStateless();
 }
 
-class _LoginPageStateless extends State<_LoginPage>{
+class _LoginPageStateless extends State<LoginPage>{
   @override
   Widget build(BuildContext context) {
     
