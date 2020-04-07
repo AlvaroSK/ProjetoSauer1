@@ -7,9 +7,9 @@ class LaudoTest {
   static void Test() async{
     
     LaudoService laudoService = LaudoService();
-    test('Descrição do Laudo',(){
+    test('DescriÃ§Ã£o do Laudo',(){
 
-      String desc1 = "Estava com corona vírus";
+      String desc1 = "Estava com corona vÃ­rus";
       String desc2 = "";
       String desc3 = "Doente em estado grave ?";
       String desc4 = "12312412412";
