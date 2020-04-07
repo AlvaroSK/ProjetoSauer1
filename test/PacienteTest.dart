@@ -4,7 +4,7 @@ import 'package:hosptec/services/PacienteService.dart';
 
 class PacienteTest{
 
-  void Test() async{
+  static void Test() async{
     PacienteService serv = PacienteService();
 
     PacienteDTO paciente1 = PacienteDTO("Teste dos Santos","M","Pardo",DateTime(1992,12,21));
