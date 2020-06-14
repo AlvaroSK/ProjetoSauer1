@@ -12,15 +12,20 @@ class _LoginScreenState extends State<LoginScreen> {
 
   get image => null;
 
-  Widget _buildloginTF() {
+  Widget _campoLogin() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
           'Login',
-          style: kLabelStyle,
+          style: TextStyle(
+                          color: Colors.black54,
+                          fontFamily: 'OpenSans',
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.bold,
+            ),              
         ),
-        SizedBox(height: 100.0),
+        SizedBox(height: 10.0),
         Container(
           alignment: Alignment.centerLeft,
           decoration: kBoxDecorationStyle,
@@ -47,13 +52,18 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildPasswordTF() {
+  Widget _campoSenha() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(
           'Senha',
-          style: kLabelStyle,
+          style: TextStyle(
+                          color: Colors.black54,
+                          fontFamily: 'OpenSans',
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.bold,
+            ),              
         ),
         SizedBox(height: 10.0),
         Container(
@@ -73,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Icons.lock,
                 color: Colors.black54,
               ),
-              hintText: 'Digite tua senha',
+              hintText: 'Senha',
               hintStyle: kHintTextStyle,
             ),
           ),
@@ -82,31 +92,36 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildForgotPasswordBtn() {
+  Widget _botaoEsqueciSenha() {
     return Container(
       alignment: Alignment.centerRight,
       child: FlatButton(
-        onPressed: () => print('Botão Esqueceu a Senha pressionado'),
+        onPressed: () => print('Botão "Esqueceu a Senha" pressionado'),
         padding: EdgeInsets.only(right: 0.0),
         child: Text(
           'Esqueceu a senha?',
-          style: kLabelStyle,
+          style: TextStyle(
+                          color: Colors.black54,
+                          fontFamily: 'OpenSans',
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.bold,
+            ),              
         ),
       ),
     );
   }
 
-  Widget _buildRememberMeCheckbox() {
+  Widget _botaoLembreMe() {
     return Container(
       height: 20.0,
       child: Row(
         children: <Widget>[
           Theme(
-            data: ThemeData(unselectedWidgetColor: Colors.white),
+            data: ThemeData(unselectedWidgetColor: Colors.black54),
             child: Checkbox(
               value: _rememberMe,
-              checkColor: Colors.green,
-              activeColor: Colors.white,
+              checkColor: Colors.white,
+              activeColor: Colors.lightBlue[100],
               onChanged: (value) {
                 setState(() {
                   _rememberMe = value;
@@ -116,20 +131,25 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           Text(
             'Lembre-me',
-            style: kLabelStyle,
+            style: TextStyle(
+                          color: Colors.black54,
+                          fontFamily: 'OpenSans',
+                          fontSize: 13.0,
+                          fontWeight: FontWeight.bold,
+            ),              
           ),
         ],
       ),
     );
   }
 
-  Widget _buildLoginBtn() {
+  Widget _botaoLogin() {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 15.0),
       width: double.infinity,
       child: RaisedButton(
         elevation: 8.0,
-        onPressed: () => print('Botão de Entrar pressionado'),
+        onPressed: () => print('Botão "Entrar" pressionado'),
         padding: EdgeInsets.all(15.0),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
@@ -149,9 +169,9 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _buildSignupBtn() {
+  Widget _botaoCadastro() {
     return GestureDetector(
-      onTap: () => print('Botão de Cadastro Pressionado'),
+      onTap: () => print('Botão "Cadastro" Pressionado'),
       child: RichText(
         text: TextSpan(
           children: [
@@ -196,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   physics: AlwaysScrollableScrollPhysics(),
                   padding: EdgeInsets.symmetric(
                     horizontal: 40.0,
-                    vertical: 120.0,
+                    vertical: 200.0,
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -223,15 +243,15 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       SizedBox(height: 30.0),
-                      _buildloginTF(),
+                      _campoLogin(),
                       SizedBox(
                         height: 30.0,
                       ),
-                      _buildPasswordTF(),
-                      _buildForgotPasswordBtn(),
-                      _buildRememberMeCheckbox(),
-                      _buildLoginBtn(),
-                      _buildSignupBtn(),
+                      _campoSenha(),
+                      _botaoEsqueciSenha(),
+                      _botaoLembreMe(),
+                      _botaoLogin(),
+                      _botaoCadastro(),
                     ],
                   ),
                 ),
