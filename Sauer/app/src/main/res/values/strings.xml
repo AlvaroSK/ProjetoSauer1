@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Sauer</string>
+    <string name="title_activity_paciente_login">paciente_login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="seu_sistema_hopitalar_em_alguns_cliques">Seu Sistema Hopitalar em alguns cliques!</string>
+    <string name="hospital_sauer">Hospital Sauer</string>
+    <string name="n_o_possui_cadastro">Não possui cadastro?</string>
+    <string name="fazer_login">fazer_login</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="bt_fazer_login">Fazer Login</string>
+    <string name="fazer_login_br">Fazer Login</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="endere_o">Endereço</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="cpf">CPF</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="j_possui_cadastro">Já possui cadastro?</string>
+    <string name="sobre">Sobre</string>
+    <string name="agendamentos">Agendamentos</string>
+    <string name="consultas">Consultas</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="sair_paciente">Sair</string>
+    <string name="exames">EXAMES</string>
+    <string name="laudos">laudos</string>
+
+
+    <string-array name="nomes">
+        <item>Alvaro</item>
+        <item>Thiago</item>
+        <item>Arthur</item>
+    </string-array>
+</resources>
